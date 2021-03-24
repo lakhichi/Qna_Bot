@@ -4,7 +4,7 @@ from botbuilder.core import BotFrameworkAdapter,BotFrameworkAdapterSettings,Turn
 from botbuilder.schema import Activity
 import asyncio
 from pic_button import SampleAnimationCard
-from aiohttp import web
+import aiohttp
 
 app = Flask(__name__)
 loop = asyncio.get_event_loop()
