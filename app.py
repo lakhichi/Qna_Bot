@@ -8,7 +8,7 @@ from pic_button import SampleAnimationCard
 app = Flask(__name__)
 loop = asyncio.get_event_loop()
 
-botsettings = BotFrameworkAdapterSettings("1be54c33-0703-4467-abc4-31f9f9c3d44f","10750cb9-348a-44d1-88b6-0ec49692d256")
+botsettings = BotFrameworkAdapterSettings("9acb793f-65e2-4b04-9211-eac37b2352ec","b524f3fd-aa3e-4115-83fd-43c338844850")
 botadapter = BotFrameworkAdapter(botsettings)
 
 CONMEMORY = ConversationState(MemoryStorage())
