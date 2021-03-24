@@ -34,7 +34,9 @@ def messages():
         botadapter.process_activity(activity,auth_header,call_fun)
         )
     loop.run_until_complete(task)
-
+    
+APP = web.Application(middlewares=[aiohttp_error_middleware])
+APP.router.add_post("/api/messages", messages)
 
 if __name__ == '__main__':
     app.run('localhost',3978)
