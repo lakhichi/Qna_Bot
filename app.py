@@ -35,4 +35,4 @@ def messages():
     loop.run_until_complete(task)
 
 if __name__ == '__main__':
-    app.run('localhost',3978)
+    app.run('https://daaservice.azurewebsites.net/api/messages',3978)
